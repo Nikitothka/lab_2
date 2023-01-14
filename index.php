@@ -110,7 +110,8 @@
                         	<?php echo $post[3]; ?>
                     	</div>
                     	<div style="font-size: 20px; margin: 10px 15px;">
-        					
+
+
         					<span> Лайки: <?php echo $post[5]; ?> <a href="set_likes.php?id=<?=$post[0]?>" style = "color: green;">+</a></span>
                             <br>
                             <span>Дизлайки: <?php echo $post[6]; ?> <a href="set_dislikes.php?id=<?=$post[0]?>" style = "color: red;">-</a></span>

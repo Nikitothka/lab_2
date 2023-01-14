@@ -11,23 +11,24 @@
 - Реагирование начужие заметки
 
 ## Ход работы
-1. Разработаем пользовательский интерфейс и опишем пользовательские сценарии работы
+1. Пользовательский интерфейс и пользовательский сценарий работы
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D1%84%D0%BE%D1%80%D1%83%D0%BC.png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/форум.png)
 
 Первоначально пользователь попадает на главную страницу (index.php). На этой странице он может поставить лайк/дизлайк чужим заметкам, а также добавить свою. Для этого необходимо в форме для ввода ввести логин и текст поста (при необхдимости добавить изображение) и нажать на кнопку "Опубликовать пост". В случае корректного ввода заметка добавляется в самое начало на главную страницу (index.php).  Если же пользователь ввел что-то неправильно, то возвращается на эту же страницу, но вверху будет написано сообщение о его ошибке. Посты можно удалаять, нажав на кнопку "удалить", и редактировать, нажав на кнопку "Изменить". Кнопка "Изменить" перенаправляет пользователя на страницу "update.php", где можно изменить заметку и сохранить изменения. В случае корректного ввода заметка изменится на главной странице (index.php).  Если же пользователь ввел что-то неправильно, то возвращается на эту же страницу (update.php), но вверху будет написано сообщение о его ошибке.
 
-2. Опишем хореографию
+2. Хореография
 
-- Добавление поста
+Добавление поста
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0(%D1%85%D0%BE%D1%80).png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Добавление.png)
 
-- Удаление поста
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0(%D1%85%D0%BE%D1%80).png)
+Удаление поста
 
-3. Опишем структуру базы данных
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Удаление.png)
+
+3. Структура базы данных
 
 | Название | Тип      | Длина | Описание                           |
 |----------|----------|-------|------------------------------------|
@@ -39,24 +40,24 @@
 | likes    | int      |       | Количество лайков                  |
 | dislikes | int      |       | Количество дизлайков               |
 
-4. Опишем алгоритмы 
+4. Алгоритмы 
 - Добавление поста
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0.png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Добавление%20поста.png)
 
 - Изменение поста
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%98%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0.png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Изменение%20поста.png)
 
 - Реакции на пост (лайк и дизлайк)
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%9B%D0%B0%D0%B9%D0%BA.png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Лайк.png)
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%94%D0%B8%D0%B7%D0%BB%D0%B0%D0%B9%D0%BA.png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Дизлайк.png)
 
 - Удаление поста
 
-![](https://github.com/AlDmitrieva/lab_2_forum/blob/main/%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D1%81%D1%82%D0%B0.png)
+![](https://github.com/OneBumBot/Lab2_CRUD/blob/main/IMAGES/Удаление%20поста.png)
 
 ## Вывод
 Разработали и реализавали клиент-серверную информационную систему, реализующую механизм CRUD
